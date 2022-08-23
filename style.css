@@ -1,0 +1,247 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Css Font */
+@font-face {
+    font-family: "Pacifico";
+    src: url('Font/Pacifico-Regular.ttf');
+}
+
+/* Css HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Css Header */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    font-style: italic;
+    text-shadow: 2.5px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 0 50px;
+    padding-bottom: 8px;
+}
+
+header h1 a {
+    color: #3D8BD8;
+    text-decoration: none;
+}
+
+header h1 span {
+    color: #FE0A0A;
+}
+
+nav {
+    position: relative;
+    top: -30px;
+    right: 50px;
+    float: right;
+}
+
+nav li {
+    display: inline;
+    margin: 10px 50px 0 0;
+}
+
+nav li :hover {
+    color: #F2F2F2;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0 7px;
+    margin: 0 -7px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+nav a {
+    color: #707070;
+    text-decoration: none;
+}
+
+/* Css Main  Jumbotron*/
+
+.jumbotron {
+    height: 400px;
+    text-align: center;
+}
+
+.jrow1 {
+    position: relative;
+    top: 34px;
+}
+
+.jrow1,
+.jrow2 {
+    left: 100px;
+}
+
+.jrow2,
+.jrow3 {
+    color: #3D8BD8;
+    font-size: 80px;
+    font-style: italic;
+    text-shadow: 2.5px 5px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 134px;
+    display: inline;
+}
+
+.jrow3 {
+    left: 210px;
+}
+
+main p span {
+    color: #FE0A0A;
+}
+
+/* Css Main Lesson */
+#lesson {
+    padding-top: 40px;
+}
+
+.card {
+    width: 242px;
+    height: 320px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.lesson h2 {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.lcolumn {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0 210px;
+}
+
+.lesson .lcolumn {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.lesson .lcolumn.appear {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.borderNsize h3 {
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 40px;
+}
+
+.borderNsize img {
+    position: relative;
+    top: 70px;
+}
+
+.borderNsize p {
+    color: rgba(112, 112, 112, 0.9);
+    position: relative;
+    top: 95px;
+}
+
+.borderNsize img {
+    width: 75px;
+    height: 75px;
+    border: 1.8px solid;
+    border-radius: 50px;
+}
+
+#lrow1 img {
+    border-color: #FE5B07;
+    background-color: #FFA07A;
+}
+
+#lrow2 img {
+    border-color: #0080FF;
+    background-color: #87CEFA;
+}
+
+#lrow3 img {
+    border-color: #F9F90D;
+    background-color: #FAFAD2;
+}
+
+#lrow4,
+#lrow5,
+#lrow6 {
+    margin-top: 20px;
+}
+
+#lrow4 img {
+    border-color: #98B5B5;
+    background-color: #F0F8FF;
+}
+
+#lrow5 img {
+    border-color: #005EFF;
+    background-color: #F0E68C;
+}
+
+#lrow6 img {
+    border-color: #06E2FB;
+    background-color: #EAEBEC;
+}
+
+/* CSS Main Aside */
+#aboutme {
+    padding-top: 12px;
+}
+
+aside {
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+aside h2,
+h3 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+aside img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+aside h3 {
+    margin-top: 20px;
+}
+
+aside p {
+    color: rgba(112, 112, 112, 0.9);
+    font-family: "pacifico", sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Css Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
